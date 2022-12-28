@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: #34d289;
+  --secondary-color: #ffff;
+  --tertiary-color: #177a4c;
+  --font-color: #000;
+  --font-color2: #b3b3b3;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--secondary-color);
+  width: 20%;
+  height: 45%;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  box-shadow: 3px 5px 10px 4px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+h1 span {
+  font-weight: 400;
+}
+
+.add-task-section {
+  display: flex;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.todo-entry {
+  width: 80%;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  border: 1px solid rgb(71, 94, 76);
+  border-radius: 2rem;
+}
+
+.todo-entry:focus {
+  outline-color: var(--tertiary-color);
+}
+
+#add-task {
+  border: none;
+  border-radius: 50%;
+  padding: 0.6rem;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+
+#add-task:hover {
+  background-color: var(--tertiary-color);
+}
+
+#add-task svg {
+  color: white;
+}
+
+.task-tally {
+  display: flex;
+  padding: 0 1rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.task-tally p {
+  margin: 0;
+}
+
+#pending-task {
+  width: 50%;
+  text-align: left;
+}
+
+#completed-task {
+  width: 50%;
+  text-align: right;
+}
+
+.task-count {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.task-status {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--font-color2);
+}
+
+#task-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-block {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.task-title-container {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.task-title {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+

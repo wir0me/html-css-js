@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Wednesday, <span>28 December</span></h1>
+      <div class="add-task-section">
+        <input
+          type="text"
+          name="todo"
+          class="todo-entry"
+          id="todo-entry"
+          placeholder="Enter a task"
+        />
+        <button id="add-task">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-pencil-plus"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M8 20l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4h4z"
+            ></path>
+            <path d="M13.5 6.5l4 4"></path>
+            <path d="M16 18h4m-2 -2v4"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="task-tally">
+        <div id="pending-task">
+          <p class="task-count">27</p>
+          <p class="task-status">Pending Tasks</p>
+        </div>
+        <div id="completed-task">
+          <p class="task-count">3</p>
+          <p class="task-status">Completed Tasks</p>
+        </div>
+      </div>
+      <div id="task-section">
+        <div class="task-block">
+          <div class="check-button-container">
+            <button class="check-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-checkbox"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <polyline points="9 11 12 14 20 6"></polyline>
+                <path
+                  d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="task-title-container">
+            <p class="task-title">Make an app</p>
+          </div>
+          <div class="delete-button-container">
+            <button class="delete-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-trash-x"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 7h16"></path>
+                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+                <path d="M10 12l4 4m0 -4l-4 4"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
