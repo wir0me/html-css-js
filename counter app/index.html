@@ -11,25 +11,42 @@
     <div class="container">
       <div class="front-box">
         <p id="count">0</p>
-        <button id="add" onclick="addOne()">+</button>
-        <button id="restart" onclick="resetCount()">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-arrow-back"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="3"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1"></path>
-          </svg>
-        </button>
-        <button id="subtract" onclick="minusOne()">-</button>
+        <div class="main-buttons">
+          <button class="operators" id="add" onclick="doMath('+')">+</button>
+          <button id="restart" onclick="resetCount()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-arrow-back"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1"></path>
+            </svg>
+          </button>
+          <button class="operator" id="subtract" onclick="doMath('-')">
+            -
+          </button>
+        </div>
+        <div class="custom-count">
+          <div class="custom-count-buttons">
+            <button class="other-buttons" id="addNum" onclick="doUserMath('+')">
+              +
+            </button>
+            <button class="other-buttons" id="subNum" onclick="doUserMath('-')">
+              -
+            </button>
+          </div>
+          <div class="custom-count-input">
+            <input type="number" class="user-custom-num" id="inputCount" />
+          </div>
+        </div>
       </div>
     </div>
 

@@ -41,16 +41,25 @@ body {
   margin: 0 0 5rem;
 }
 
-button {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: white;
-
-  padding: 0.3rem 4rem;
-  cursor: pointer;
+.main-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#add, #subtract {
+button {
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+
+}
+
+#add, #subtract, #restart {
+  font-size: 3.5rem;
+  padding: 0.3rem 3rem;
+}
+
+#add, #subtract, .other-buttons {
   background-color: var(--light-green);
   border: 3px solid var(--light-green);
   border-radius: 0.5rem;
@@ -60,5 +69,45 @@ button {
   background-color: var(--mid-green);
   border: 3px solid var(--light-green);
   border-radius: 0.5rem;
-  margin: 0 1rem;
+}
+
+.custom-count {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 1rem 0 0;
+}
+
+.custom-count-buttons {
+  display: flex;
+  gap: .5rem;
+}
+
+.other-buttons {
+  padding: 0.2rem 1.43rem;
+}
+
+.custom-count-input {
+  flex: 1;
+}
+
+.user-custom-num {
+  float: right;
+
+  border: none;
+  border-bottom: 2px solid white;
+  padding: .5rem 1rem;
+  background-color: transparent;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+.user-custom-num:focus {
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
