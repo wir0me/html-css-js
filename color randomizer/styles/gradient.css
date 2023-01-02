@@ -5,6 +5,8 @@
   --gradient2: #000;
 
   --white: #fff;
+  --greyed: rgb(78, 78, 78);
+  --green: #50c878;
 }
 
 html {
@@ -53,6 +55,15 @@ h1 {
   width: 80%;
   height: 25vh;
   border-radius: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.color-container:hover {
+  opacity: 70%;
 }
 
 .left {
@@ -63,6 +74,11 @@ h1 {
 .right {
   background-color: var(--gradient2);
 }
+
+.lock-button {
+  color: var(--greyed);
+}
+
 
 .hex-code {
   font-size: 1.8rem;
