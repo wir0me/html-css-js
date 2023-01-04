@@ -49,6 +49,59 @@ h1 {
   font-weight: 500;
 }
 
+
+
+/* slider */
+.rgb-finder {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.color-slider {
+  display: grid;
+  grid-template-columns: 2rem 1fr 5rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.color-box-container {
+  height: 100%;
+  width: 100%;
+}
+
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+input[type=number] {
+  font-size: 1.4rem;
+  border: none;
+  border-bottom: 1px solid black;
+  padding-left: .5rem;
+  font-weight: 500;
+}
+
+input[type=number]:focus {
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+/* button */
 button {
   border: none;
   border-radius: 2rem;

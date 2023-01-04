@@ -18,10 +18,29 @@ const hexCodeChar = [
 ];
 
 let hexCodeCount;
+let hexCode
+let red
+let green
+let blue
 
-// single color
+//input range
+const redRange = document.getElementById("red-range");
+const greenRange = document.getElementById("green-range");
+const blueRange = document.getElementById("blue-range");
+
+// input numbers
+const redRGB = document.getElementById("redNum");
+const greenRGB = document.getElementById("greenNum");
+const blueRGB = document.getElementById("blueNum");
+
+function convertHexCode(hex) {
+  red = parseInt(hex.slice(1, 3), 16);
+  green = parseInt(hex.slice(3, 5), 16);
+  blue = parseInt(hex.slice(5, 7), 16);
+}
+
 function generateHexCode() {
-  var hexCode = "#";
+  hexCode = "#";
   for (i = 0; i < 6; i++) {
     var char = hexCodeChar[Math.floor(Math.random() * hexCodeChar.length)];
     hexCode += char;
@@ -29,7 +48,21 @@ function generateHexCode() {
 
   document.getElementById("hex-code").innerHTML = hexCode;
   document.documentElement.style.setProperty("--color1", hexCode);
+
+  convertHexCode(hexCode);
+
+  //change range values
+  redRange.value = red;
+  greenRange.value = green;
+  blueRange.value = blue;
+
+  // change input number values
+  redRGB.value = red;
+  greenRGB.value = green;
+  blueRGB.value = blue;
 }
+
+
 
 
 // lock and unlock colors
