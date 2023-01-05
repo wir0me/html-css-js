@@ -43,7 +43,7 @@ h1 {
   border-radius: 2rem;
 }
 
-#hex-code {
+.hex-code {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 500;
