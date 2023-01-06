@@ -1,33 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-
-:root {
-  --color1: #000;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Quicksand", sans-serif;
-}
-
-.background {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--color1);
-  display: flex;
-}
-
-.color-card {
+#color-card {
   align-items: center;
   margin: auto;
   text-align: center;
-  background-color: white;
+  background-color: var(--main-color);
   padding: 2.5rem 5rem;
+  
+  border: 1px solid transparent;
   border-radius: 2rem;
+  box-shadow: 2px 3px 6px 2px rgba(0, 0, 0, 0.3);
+  padding: 2rem 3rem;
 }
 
 h1 {
@@ -35,12 +16,53 @@ h1 {
   font-size: 2.5rem;
 }
 
-#color-container {
+#hex-container {
+  display: grid;
+}
+
+.gradient {
+  grid-template-columns: 20rem 20rem;
+}
+
+.palette {
+  grid-template-columns: 15rem 15rem 15rem 15rem;
+}
+
+.color-container {
   margin: 0 auto;
   width: 80%;
   height: 25vh;
-  background-color: var(--color1);
   border-radius: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-container:hover {
+  opacity: 70%;
+}
+
+.one {
+  background-color: var(--color1);
+}
+
+.two {
+  background-color: var(--color2);
+}
+
+.three {
+  background-color: var(--color3);
+}
+
+.four {
+  background-color: var(--color4);
+}
+
+.lock-button {
+  color: var(--greyed);
+  stroke: rgb(209, 209, 209);
+  stroke-width: .4px;
 }
 
 .hex-code {
@@ -48,8 +70,6 @@ h1 {
   text-transform: uppercase;
   font-weight: 500;
 }
-
-
 
 /* slider */
 .rgb-finder {
@@ -100,7 +120,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-
 /* button */
 button {
   border: none;
@@ -110,6 +129,7 @@ button {
   cursor: pointer;
   opacity: 0.95;
   margin-top: 0.8rem;
+  color: var(--main-color);
 }
 
 button:hover {
@@ -117,6 +137,6 @@ button:hover {
 }
 
 #generate-button {
-  background-color: #50c878;
+  background-color: var(--secondary);
   padding: 1rem 2.5rem;
 }

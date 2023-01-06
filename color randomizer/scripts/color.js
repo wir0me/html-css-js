@@ -18,7 +18,7 @@ const hexCodeChar = [
   "F",
 ];
 
-let hexCodeList = [];
+let hexCodeList;
 let hexCode
 let red
 let green
@@ -39,28 +39,34 @@ const redRGB = document.getElementById("redNum");
 const greenRGB = document.getElementById("greenNum");
 const blueRGB = document.getElementById("blueNum");
 
+// lock and unlock colors
+const lockToggle1 = document.getElementsByClassName("lock-button")[0];
+let colorLocked1 = false;
+
+const lockToggle2 = document.getElementsByClassName("lock-button")[1];
+let colorLocked2 = false;
+
+const lockToggle3 = document.getElementsByClassName("lock-button")[2];
+let colorLocked3 = false;
+
+const lockToggle4 = document.getElementsByClassName("lock-button")[3];
+let colorLocked4 = false;
+
 // FUNCTIONS
 function generateHexCode() {
+  hexCodeList = [];
   hexCode = "#"
-  hexCode2 = "#"
-  hexCode3 = "#"
-  hexCode4 = "#"
-      for (i = 0; i < 6; i++) {
-        var char = hexCodeChar[Math.floor(Math.random() * hexCodeChar.length)];
-        hexCode += char;
-      }
-      for (i = 0; i < 6; i++) {
-        var char = hexCodeChar[Math.floor(Math.random() * hexCodeChar.length)];
-        hexCode2 += char;
-      }
-      for (i = 0; i < 6; i++) {
-        var char = hexCodeChar[Math.floor(Math.random() * hexCodeChar.length)];
-        hexCode3 += char;
-      }
-      for (i = 0; i < 6; i++) {
-        var char = hexCodeChar[Math.floor(Math.random() * hexCodeChar.length)];
-        hexCode4 += char;
-      }
+  let n = 0;
+  while (n < 4) {
+    for (i = 0; i < 6; i++) {
+      var char = hexCodeChar[Math.floor(Math.random() * hexCodeChar.length)];
+      hexCode += char;
+    }
+    hexCodeList.push(hexCode);
+    hexCode = "#";
+    n++;
+  }
+  console.log(hexCodeList);
 }
 
 function convertHexCode(hex) {
@@ -72,8 +78,8 @@ function convertHexCode(hex) {
 function render(hexCount) {
   switch (hexCount) {
     case 1:
-      hexCodeContainer[0].innerHTML = hexCode;
-      document.documentElement.style.setProperty("--color1", hexCode);
+      hexCodeContainer[0].innerHTML = hexCodeList[0];
+      document.documentElement.style.setProperty("--color1", hexCodeList[0]);
 
       //change range values
       redRange.value = red;
@@ -87,15 +93,65 @@ function render(hexCount) {
 
       break;
     case 4:
-      hexCodeContainer[2].innerHTML = hexCode3;
-      document.documentElement.style.setProperty("--color3", hexCode3);
-      hexCodeContainer[3].innerHTML = hexCode4;
-      document.documentElement.style.setProperty("--color4", hexCode4);
+      if (colorLocked3 == false) {
+        hexCodeContainer[2].innerHTML = hexCodeList[2];
+        document.documentElement.style.setProperty("--color3", hexCodeList[2]);
+      }
+      if (colorLocked4 == false) {
+        hexCodeContainer[3].innerHTML = hexCodeList[3];
+        document.documentElement.style.setProperty("--color4", hexCodeList[3]);
+      }
+
     case 2:
-      hexCodeContainer[0].innerHTML = hexCode;
-      document.documentElement.style.setProperty("--color1", hexCode);
-      hexCodeContainer[1].innerHTML = hexCode2;
-      document.documentElement.style.setProperty("--color2", hexCode2);
+      if (colorLocked1 == false) {
+        hexCodeContainer[0].innerHTML = hexCodeList[0];
+        document.documentElement.style.setProperty("--color1", hexCodeList[0]);
+      }
+      if (colorLocked2 == false) {
+        hexCodeContainer[1].innerHTML = hexCodeList[1];
+        document.documentElement.style.setProperty("--color2", hexCodeList[1]);
+      }
+    }
+}
+
+// lock and unlock functions
+function lockColor1() {
+  if (colorLocked1 === true) {
+    colorLocked1 = false;
+    lockToggle1.style.color = 'var(--greyed)';
+  } else {
+    colorLocked1 = true;
+    lockToggle1.style.color = 'var(--green)';
+  }
+}
+
+function lockColor2() {
+  if (colorLocked2 === true) {
+    colorLocked2 = false;
+    lockToggle2.style.color = 'var(--greyed)';
+  } else {
+    colorLocked2 = true;
+    lockToggle2.style.color = 'var(--green)';
+  }
+}
+
+function lockColor3() {
+  if (colorLocked3 === true) {
+    colorLocked3 = false;
+    lockToggle3.style.color = 'var(--greyed)';
+  } else {
+    colorLocked3 = true;
+    lockToggle3.style.color = 'var(--green)';
+  }
+}
+
+function lockColor4() {
+  if (colorLocked4 === true) {
+    colorLocked4 = false;
+    lockToggle4.style.color = 'var(--greyed)';
+  } else {
+    colorLocked4 = true;
+    lockToggle4.style.color = 'var(--green)';
   }
 }
 
@@ -105,10 +161,15 @@ generateButton.addEventListener('click', () => {
 
   if (hexCodeCount == 1) {
     generateHexCode();
-    convertHexCode(hexCode);
+    convertHexCode(hexCodeList[0]);
     render(hexCodeCount);
   } else {
     generateHexCode();
     render(hexCodeCount);
   }
 });
+
+lockToggle1.addEventListener("click", lockColor1);
+lockToggle2.addEventListener("click", lockColor2);
+lockToggle3.addEventListener("click", lockColor3);
+lockToggle4.addEventListener("click", lockColor4);
