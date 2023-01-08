@@ -1,6 +1,5 @@
-#color-card {
+.color-card {
   align-items: center;
-  margin: auto;
   text-align: center;
   background-color: var(--main-color);
   padding: 2.5rem 5rem;
@@ -11,9 +10,13 @@
   padding: 2rem 3rem;
 }
 
+.single {
+  margin: 0 10rem;
+}
+
 h1 {
   margin-top: 0;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 #hex-container {
@@ -30,7 +33,7 @@ h1 {
 
 .color-container {
   margin: 0 auto;
-  width: 80%;
+  width: 50%;
   height: 25vh;
   border-radius: 2rem;
 
@@ -66,7 +69,7 @@ h1 {
 }
 
 .hex-code {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -79,16 +82,15 @@ h1 {
 
 .color-slider {
   display: grid;
-  grid-template-columns: 2rem 1fr 5rem;
-  gap: 1rem;
+  grid-template-columns: 1.6rem 1fr 4rem;
+  gap: 1.5rem;
   margin-bottom: 2rem;
+  vertical-align: middle;
 }
 
 .color-box-container {
   height: 100%;
-  width: 100%;
 }
-
 
 .red {
   background-color: red;
@@ -102,8 +104,13 @@ h1 {
   background-color: blue;
 }
 
+.slider {
+  height: 0.5rem;
+  margin: auto 0;
+}
+
 input[type=number] {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   border: none;
   border-bottom: 1px solid black;
   padding-left: .5rem;
@@ -125,7 +132,7 @@ button {
   border: none;
   border-radius: 2rem;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   cursor: pointer;
   opacity: 0.95;
   margin-top: 0.8rem;
@@ -138,5 +145,5 @@ button:hover {
 
 #generate-button {
   background-color: var(--secondary);
-  padding: 1rem 2.5rem;
+  padding: 1rem 2rem;
 }

@@ -2,7 +2,9 @@
 
 :root {
   --main-color: #ffff;
-  --secondary: black;
+  --secondary: #4ed2ff;
+  --tertiary: #e4e9f7;
+  --font-color1: black;
   --greyed: rgb(78, 78, 78);
   --green: rgb(30, 192, 30);
   --color1: red;
@@ -19,13 +21,110 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
+  
 }
 
 .background {
-  background-color: white;
+  background-color: var(--main-color);
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.content-center {
+  /* border: 1px solid var(--secondary); */
+  width: 45%;
+  height: 100vh;
+}
+
+
+
+/* HEADER */
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
+.site-logo {
+  flex: 1;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.site-logo a {
+  display: grid;
+  grid-template-columns: 2.4rem auto;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.site-logo img {
+  height: 3.2rem;
+  filter: invert(35%) sepia(66%) saturate(4422%) hue-rotate(330deg) brightness(94%) contrast(99%);
+}
+
+.site-name {
+  margin: 0.7rem 0;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.site-name span {
+  color: var(--secondary);
+}
+
+.menu {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu img {
+  height: 1.5rem;
+  filter: invert(86%) sepia(31%) saturate(5624%) hue-rotate(166deg) brightness(102%) contrast(101%);
+  opacity: 65%;
+  transition: opacity 15ms;
+}
+
+.menu img:hover {
+  opacity: 100%;
+}
+
+
+
+/* NAVIGATION CONTROLS */
+
+.navbar {
+  background-color: var(--tertiary);
+  border-radius: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.navbar ul {
+  padding: 0;
+}
+
+.navbar ul > li {
+  display: inline;
+  list-style: none;
+  margin: 1rem 2.5rem;
+  cursor: pointer;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.navbar ul > li > a:hover {
+  color: var(--secondary);
+}
+
+
