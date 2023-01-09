@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/color-card.css" />
-    <title>Color Generator</title>
+    <title>Color Generator | Single Color</title>
   </head>
   <body>
     <div class="background">
@@ -14,29 +14,29 @@
         <header class="top-bar">
           <div class="site-logo">
             <a href="#">
-              <img src="svg/rainbow.svg" />
+              <img src="svg/rainbow.svg" class="site-logo-img" />
               <p class="site-name"><span>Color</span>.It</p>
             </a>
           </div>
           <div class="menu">
-            <img src="svg/world.svg" />
-            <img src="svg/sun.svg" />
-            <img src="svg/tool.svg" />
-            <img src="svg/user.svg" />
+            <img src="svg/world.svg" class="site-menu" />
+            <img src="svg/sun.svg" id="mode-switch" />
+            <img src="svg/tool.svg" class="site-menu" />
+            <img src="svg/user.svg" class="site-menu" />
           </div>
         </header>
         <nav class="navbar">
           <ul>
-            <li><a href="#">Single Color</a></li>
-            <li><a href="#">Gradient</a></li>
-            <li><a href="#">Palette</a></li>
+            <li><a href="home.html">Single Color</a></li>
+            <li><a href="gradient.html">Gradient</a></li>
+            <li><a href="palette.html">Palette</a></li>
             <li><a href="#">Your Favorites</a></li>
           </ul>
         </nav>
-        <div class="color-card single">
+        <div class="color-card single-card">
           <h1>Random Color Generator</h1>
           <div class="color-container one"></div>
-          <p class="hex-code">#000</p>
+          <p class="hex-code">#ff0001</p>
           <div class="rgb-finder">
             <div class="color-slider" id="red-slider">
               <div class="color-box-container red"></div>
@@ -108,7 +108,7 @@
               />
             </div>
           </div>
-          <button id="generate-button">Generate</button>
+          <button class="generate-button">Generate</button>
         </div>
       </div>
     </div>

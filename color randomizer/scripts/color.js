@@ -25,7 +25,7 @@ let green
 let blue
 let i = 0
 
-const generateButton = document.getElementById('generate-button');
+const generateButton = document.querySelector('.generate-button');
 const hexCodeContainer = document.getElementsByClassName('hex-code');
 const hexCodeCount = document.querySelectorAll('.hex-code').length;
 
