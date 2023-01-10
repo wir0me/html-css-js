@@ -32,15 +32,15 @@ h1 {
 .hex-container {
   display: grid;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .gradient {
-  grid-template-columns: 15rem 15rem;
+  grid-template-columns: 10rem 10rem;
 }
 
 .palette {
-  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-template-columns: 5rem 5rem 5rem 5rem;
 }
 
 .color-container {
@@ -179,3 +179,4 @@ button:hover {
   box-shadow: 2px 3px 6px 2px rgba(0, 0, 0, 0.3);
 
 }
+
