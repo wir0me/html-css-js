@@ -1,0 +1,25 @@
+
+
+.nav-item a:hover {
+  color: #53d9f2;
+}
+
+@media (min-width: 576px) {
+  #signup-field {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  #signup-field {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  #signup-field {
+    width: 30%
+  }
+}
+  
+
