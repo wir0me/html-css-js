@@ -1,24 +1,46 @@
-
+.text-custom-color {
+  color: #53d9f2;
+}
 
 .nav-item a:hover {
   color: #53d9f2;
+}
+
+@media (max-width: 575px) {
+  #feature-row img {
+    width: 75px;
+  }
 }
 
 @media (min-width: 576px) {
   #signup-field {
     width: 70%;
   }
+
+  #feature-row img {
+    width: 150px;
+  }
+
 }
+
 
 @media (min-width: 768px) {
   #signup-field {
     width: 50%;
   }
+
+  #feature-row img {
+    width: 200px;
+  }
 }
 
 @media (min-width: 992px) {
   #signup-field {
-    width: 30%
+    width: 30%;
+  }
+
+  #feature-row img {
+    width: 300px;
   }
 }
   
