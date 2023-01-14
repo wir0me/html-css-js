@@ -6,6 +6,18 @@
   color: #53d9f2;
 }
 
+i:hover {
+  color: grey;
+}
+
+.accordion {
+  width: 60% !important;
+}
+
+.details {
+  font-size: 0.9rem;
+}
+
 @media (max-width: 575px) {
   #feature-row img {
     width: 75px;
@@ -21,6 +33,10 @@
     width: 150px;
   }
 
+  .card {
+    width: 85% !important;
+  }
+
 }
 
 
@@ -32,6 +48,10 @@
   #feature-row img {
     width: 200px;
   }
+
+  .card {
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -41,6 +61,10 @@
 
   #feature-row img {
     width: 300px;
+  }
+
+  .card {
+    width: 85% !important;
   }
 }
   

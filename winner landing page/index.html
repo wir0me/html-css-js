@@ -11,11 +11,17 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- navbar -->
     <nav
-      class="navbar navbar-expand-lg bg-light text-black-50 text-uppercase mb-5"
+      class="navbar navbar-expand-lg bg-light text-black-50 text-uppercase mb-5 fixed-top"
     >
       <div class="container-fluid">
         <a href="#" class="navbar-brand">
@@ -64,18 +70,18 @@
       <div>
         <div class="input-group input-group-sm mx-auto mb-3" id="signup-field">
           <input
-            type="text"
+            type="email"
             class="form-control"
             placeholder="Enter email to sign up for newsletter"
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
           />
           <button
-            class="btn btn-outline-secondary"
-            type="button"
+            class="btn btn-outline-secondary btn-dark text-light"
+            type="submit"
             id="button-addon2"
           >
-            Button
+            Submit
           </button>
         </div>
       </div>
@@ -112,16 +118,18 @@
       </div>
     </section>
     <!-- Tracklist -->
-    <section class="bg-black py-5 my-5">
+    <section class="bg-dark py-5 mt-5">
       <div
-        class="container text-bg-black text-center text-uppercase text-white"
+        class="container text-bg-black text-center text-white"
         id="tracklist"
       >
-        <div class="row mb-2">
-          <h2><span class="text-custom-color">'Holiday'</span> Tracklist</h2>
+        <div class="row mb-2 text-uppercase">
+          <h2>
+            <span class="text-custom-color fw-bolder">'Holiday'</span> Tracklist
+          </h2>
         </div>
-        <div class="row p-2 border-top border-bottom">
-          <ol class="list-group list-group-numbered">
+        <div class="row p-2 border-top">
+          <ol class="list-group list-group-numbered pt-3">
             <li
               class="list-group-item bg-transparent text-bg-dark border-0 p-0"
             >
@@ -154,19 +162,43 @@
             </li>
           </ol>
         </div>
+        <div class="row mt-4">
+          <div class="col">
+            <div>
+              <a
+                href="https://open.spotify.com/album/6DuGgrykXd5DVx3aznyYqH?si=fYoIagZGTVqh-vA5XtkWHw"
+                target="_blank"
+                class="text-success fs-2 me-5"
+                ><i class="bi bi-spotify"></i
+              ></a>
+              <a
+                href="https://youtube.com/playlist?list=OLAK5uy_kkO2reFBpSWuJopq0CfADfubWYfuP9fNM"
+                target="_blank"
+                class="text-danger fs-2 me-5"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a
+                href="https://music.apple.com/us/album/holiday-ep/1632174622"
+                target="_blank"
+                class="text-light fs-2"
+                ><i class="bi bi-apple"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- Album Spoiler -->
-    <section class="my-5">
+    <!-- Album Sampler -->
+    <section class="pb-5 bg-dark">
       <div class="container-lg text-center p-0">
         <h2
-          class="text-uppercase text-center fw-bolder mb-2"
+          class="text-uppercase text-center text-light fw-bolder mb-4"
           id="album-sampler"
         >
           Album <span class="text-danger">Sampler</span>
         </h2>
         <iframe
-          class="ratio ratio-21x9"
+          class="ratio ratio-21x9 mb-5"
           width="894"
           height="503"
           src="https://www.youtube.com/embed/IBHl2F0RbQ0"
@@ -178,15 +210,13 @@
       </div>
     </section>
     <!-- Pricing -->
-    <section class="my-5 bg-black">
+    <section class="my-5">
       <div class="container-lg text-center">
-        <h2 class="text-uppercase text-white fw-bolder" id="pricing">
-          Pricing
-        </h2>
+        <img src="imgs/holiday-header.jpg" class="w-100 mb-5" alt="" />
       </div>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
+      <div class="container text-center mb-5">
+        <div class="row g-5">
+          <div class="col-md-4">
             <div class="card mx-auto" style="width: 18rem">
               <img
                 src="imgs/holiday-kit-ver.jpg"
@@ -197,20 +227,20 @@
                 <h5 class="card-title">
                   WINNER 4th MINI ALBUM [HOLIDAY] | KiT ALBUM
                 </h5>
-                <p class="card-text">
+                <p class="card-text text-secondary">
                   Package Box + KiT (1ea) + Lyrics Photocard Set (12ea) + Random
                   Selfie Photocard (2 of 8)
                 </p>
                 <a
                   href="https://en.ygselect.com/product/winner-4th-mini-album-holiday-kit-album/7603/category/1/display/27/"
-                  class="btn btn-primary"
+                  class="btn btn-primary btn-dark"
                   target="_blank"
                   >$20.92</a
                 >
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <div class="card mx-auto" style="width: 18rem">
               <img
                 src="imgs/holiday-photobook-ver.jpg"
@@ -222,21 +252,21 @@
                   [YG SELECT EDITION] WINNER 4th MINI ALBUM [HOLIDAY] (PHOTOBOOK
                   ver.)
                 </h5>
-                <p class="card-text">
+                <p class="card-text text-secondary">
                   Sleeve Cover + Photobook (102p) + CD + Random Photocard (1 of
                   8) + Random Selfie Photocard (2 of 12) + Sticker (1ea) +
                   Random WINNER Postcard (1 of 2) + Random ID Card (1 of 4)
                 </p>
                 <a
                   href="https://en.ygselect.com/product/yg-select-edition-winner-4th-mini-album-holiday-photobook-ver/7597/category/23/display/1/"
-                  class="btn btn-primary"
+                  class="btn btn-primary btn-dark"
                   target="_blank"
                   >$15.09</a
                 >
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <div class="card mx-auto" style="width: 18rem">
               <img
                 src="imgs/holiday-digipack-ver.jpg"
@@ -247,13 +277,13 @@
                 <h5 class="card-title">
                   WINNER 4th MINI ALBUM [HOLIDAY] (DIGIPACK ver.)
                 </h5>
-                <p class="card-text">
+                <p class="card-text text-secondary">
                   Digipack + CD + Booklet (24p) + Folded Poster (1ea) + Random
                   Selfie Photocardz (1 of 5) + Holiday Seal (1ea)
                 </p>
                 <a
                   href="https://en.ygselect.com/product/winner-4th-mini-album-holiday-digipack-ver/7615/category/31/display/1/"
-                  class="btn btn-primary"
+                  class="btn btn-primary btn-dark"
                   target="_blank"
                   >$10.18</a
                 >
@@ -262,7 +292,174 @@
           </div>
         </div>
       </div>
+      <div class="mt-5 container-lg">
+        <div class="accordion mx-auto">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+              >
+                Product Details
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    A maximum of
+                    <span class="text-danger fw-bold">5 products</span> can be
+                    purchased per order.
+                  </li>
+                  <li>
+                    Contents are subject to change during the manufacturing
+                    process.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion mx-auto">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+              >
+                Shipping Information
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headineTwo"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Shipping Method: Selected by customer</li>
+                  <li>Delivery Time: 15 - 20 days</li>
+                  <li>Shipping Area: A Region</li>
+                  <li>Shipping Rate: International Shipping Rate</li>
+                  <ul>
+                    <li>
+                      An additional fee may be charged depending on the region
+                    </li>
+                    <li>
+                      Delivery may be slightly delayed due to product
+                      availability and warehouse circumstances
+                    </li>
+                    <li>
+                      As indicated on the product details, brand products are
+                      shipped directly from the brand with a separate shipping
+                      fee.
+                    </li>
+                    <li>
+                      For pre-order or custom-order products, please take note
+                      of the dispatch date and manufacture period indicated on
+                      the product details.
+                    </li>
+                    <li>
+                      If your order includes items that are not available for
+                      same-day dispatch, your order will be dispatched when all
+                      items are ready to ship.
+                    </li>
+                    <li>
+                      We will inform you if your order is out of stock and not
+                      available to ship.
+                      <span class="fst-italic text-danger">
+                        If you do not respond within 7 days to our email
+                        notification regarding out-of-stock items, your order
+                        will be automatically canceled.
+                      </span>
+                    </li>
+                    <li>
+                      The actual amount paid by the customer is the product
+                      price, minus the discount amount according to the applied
+                      coupon (applicable only to members), and plus the shipping
+                      fee and amount applied depending on the options. (This is
+                      called the Actual Purchase Amount of the purchased
+                      product.) Proof of purchase (credit card receipts,
+                      invoices, etc.) will be issued in full (market price).
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion mx-auto">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+              >
+                Product Details
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headineThree"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    Exchanges or returns are available within 7 days after
+                    delivery (unless the packaging is opened or damaged,
+                    resulting in loss of commercial value).
+                  </li>
+                  <ul>
+                    <li class="text-danger">
+                      Customers are responsible for all return postage costs for
+                      change of mind returns and exchanges (including size/color
+                      exchanges).
+                    </li>
+                    <p class="fst-italic m-0">
+                      Please send your return package only after you submit a
+                      request via Private Inquiry.
+                    </p>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <footer class="border-top bg-dark">
+      <div class="container-lg">
+        <p class="fw-bold pt-5 pb-3 fs-5 text-uppercase text-white">About Us</p>
+        <p class="fw-light text-white-50 details">
+          Company Name | YG PLUS CO., LTD CEO | SUNG JUN CHOI Business
+          Registration No. | 1208167338 | <br />
+          E-commerce Permit | 2022-Seoul-Yeongdeungpo-3059 <br />
+          Address | 07326 International Finance Center Seoul 19F 10,
+          Gukjegeumyung-ro, Yeongdeungpo-gu, Seoul, Korea <br />
+          Hosted by: Cafe24 Corp.
+        </p>
+        <p class="fw-light text-white-50 details">
+          For purchase safety, you can use our partner LG U+''s electronic
+          payment protection service (Escrow) when you shop with any method
+          including cash. Payment Deposit Business Registration No.:
+          02-006-00001
+        </p>
+        <p class="fw-light text-white-50 pb-4 details m-0">
+          All contents on YG SELECT are protected by copyright.
+        </p>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
