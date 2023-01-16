@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600&display=swap');
+
+.navbar-brand {
+  font-family: 'Alumni Sans', sans-serif;
+}
+
+#company-logo {
+  filter: invert(40%) sepia(63%) saturate(528%) hue-rotate(100deg) brightness(92%) contrast(90%);
+}
