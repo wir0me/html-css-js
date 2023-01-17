@@ -11,16 +11,22 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
     <title>HomeState</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand text-black fs-3">
+    <nav class="navbar navbar-expand-md fixed-top mx-4">
+      <div class="container-fluid my-auto">
+        <a href="#" class="navbar-brand text-black fs-2">
           <img
             src="imgs/building-estate.svg"
-            width="32"
-            height="32"
+            width="42"
+            height="42"
             class="d-inline-block align-text-bottom"
             id="company-logo"
           />
@@ -38,10 +44,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-end"
+          class="collapse navbar-collapse justify-content-end d-md-flex"
           id="navbarNavDropdown"
         >
-          <div class="navbar-nav">
+          <div
+            class="navbar-nav fw-semibold me-md-4 pe-3 border-end border-dark"
+          >
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a href="#" class="nav-link">Properties</a>
             <a href="#" class="nav-link">Listed</a>
@@ -49,11 +57,49 @@
             <a href="#" class="nav-link">About Us</a>
           </div>
           <span>
-            <button class="btn btn-success" type="button">Sign In</button>
+            <button class="btn btn-success rounded-pill" type="button">
+              Sign In
+            </button>
           </span>
         </div>
       </div>
     </nav>
+    <main>
+      <section
+        class="container-fluid my-auto d-flex flex-column align-items-center justify-content-center"
+        id="hero-section"
+      >
+        <h1 class="fs-1 custom-font">
+          Find your next perfect place with easy way
+        </h1>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control rounded-pill me-2"
+            style="width: 400px"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="search-bar"
+          />
+          <button
+            class="btn btn-success rounded-pill"
+            type="submit"
+            id="search-button"
+          >
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </section>
+      <!-- Featured properties -->
+      <section class="pt-3">
+        <div class="container-fluid mt-5 ms-5 custom-font">
+          <h2 class="fs-1">Featured Properties</h2>
+          <p class="fs-4 fw-light text-black-50">
+            Find the best deal for your future property
+          </p>
+        </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
     <script
