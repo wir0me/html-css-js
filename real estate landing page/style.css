@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+body {
+  background-color: rgb(245, 245, 245) !important;
+}
+
 .custom-font {
   font-family: 'Poppins', sans-serif;
 }
@@ -17,6 +21,16 @@
 #hero-section {
   background-image: url("imgs/page-header.png");
   background-repeat: no-repeat;
-  height: 75vh;
+  height: 80vh;
   object-fit: cover;
+}
+
+.hover-green {
+  background-color: white;
+  color: black;
+}
+
+.hover-green:hover {
+  background-color: #198754;
+  color: white;
 }
