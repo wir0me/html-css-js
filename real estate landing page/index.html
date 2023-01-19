@@ -20,9 +20,11 @@
     <title>HomeState</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md fixed-top mx-4">
+    <nav
+      class="navbar navbar-expand-md px-lg-4 bg-white bg-opacity-75 fixed-top container-fluid"
+    >
       <div class="container-fluid my-auto">
-        <a href="#" class="navbar-brand text-black fs-2">
+        <a href="#" class="navbar-brand text-black fs-2 company-font">
           <img
             src="imgs/building-estate.svg"
             width="42"
@@ -33,7 +35,7 @@
           HomeState</a
         >
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -69,37 +71,20 @@
         class="container-fluid my-auto d-flex flex-column align-items-center justify-content-center"
         id="hero-section"
       >
-        <h1 class="fs-1 custom-font">
+        <h1 class="fs-1 flex-shrink-1 custom-font">
           Find your next perfect place with easy way
         </h1>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control rounded-pill me-2"
-            style="width: 400px"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-            id="search-bar"
-          />
-          <button
-            class="btn btn-success rounded-pill"
-            type="submit"
-            id="search-button"
-          >
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
       </section>
       <!-- Featured properties -->
       <section class="pt-3">
-        <div class="container mt-5 ms-5 custom-font">
+        <div class="container mt-5 ms-md-5 custom-font">
           <h2 class="fs-1">Featured Properties</h2>
           <p class="fs-4 fw-light text-black-50">
             Find the best deal for your future property
           </p>
         </div>
         <div class="row container py-3 mx-auto g-5 custom-font">
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="card border-0" style="width: 100%">
               <img src="imgs/home-1.webp" class="card-img-top" />
               <div class="card-body">
@@ -117,7 +102,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="card border-0" style="width: 100%">
               <img src="imgs/home-2.webp" class="card-img-top" />
               <div class="card-body">
@@ -135,7 +120,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="card border-0" style="width: 100%">
               <img src="imgs/home-3.webp" class="card-img-top" />
               <div class="card-body">
@@ -160,8 +145,8 @@
       <!-- Special Advantage -->
       <section class="pt-5 custom-font mt-5">
         <div class="row container mx-auto">
-          <div class="col-6">
-            <div class="card text-bg-dark border-0" style="height: 69%">
+          <div class="col-md-6">
+            <div class="card text-bg-dark border-0" style="height: 75%">
               <img
                 src="imgs/high-rise.jpg"
                 class="card-img"
@@ -188,7 +173,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-md-6">
             <h2>Special Advantage</h2>
             <p class="fs-5 text-black-50 mb-5">
               Benefits you get when using our services.
@@ -262,7 +247,134 @@
           </div>
         </div>
       </section>
+      <!-- Testimonial -->
+      <section class="text-black text-center custom-font">
+        <div class="py-5 bg-container">
+          <h2 class="fw-bolder fs-1 mb-0">Testimonial</h2>
+          <p class="fs-5 mb-5">What our client says about us!</p>
+          <img
+            src="https://randomuser.me/api/portraits/men/18.jpg"
+            class="mb-3"
+          />
+          <p class="fs-5 fw-light mb-4">
+            "Amazing estate company. If I want to buy house, it's <br />
+            always expensive but I don't want a bad house. Finally, I found
+            <br />
+            my dream house here. They are the best!"
+          </p>
+          <h5 class="fs-3 mb-0">David Anton Sergio</h5>
+          <h6 class="fs-5 text-black-50">TV Personality</h6>
+        </div>
+      </section>
+      <!-- Our Blog -->
+      <section class="text-black custom-font">
+        <div class="py-5 container-fluid">
+          <div class="ms-md-5">
+            <h2 class="fs-1">Our Blog</h2>
+            <p class="text-black-50 fs-4">
+              Check our latest blogs about housing
+            </p>
+          </div>
+          <div class="row container-fluid py-3 mx-auto g-5">
+            <div class="col-md-4">
+              <div class="card border-0" style="width: 90%">
+                <img src="imgs/housing.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Housing Challenge or Housing Opportunity? It Depends
+                  </h5>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <p class="card-text">by Marco David</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="card-text float-end">Jan 16, 2023</p>
+                    </div>
+                  </div>
+
+                  <a href="#" class="btn btn-success"
+                    >Read More <i class="bi bi-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card border-0" style="width: 90%">
+                <img src="imgs/best-home.png" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Top 10 Cities To Buy or Rent A Home for Millenials
+                  </h5>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <p class="card-text">by Selene Courtney</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="card-text float-end">Jan 3, 2023</p>
+                    </div>
+                  </div>
+
+                  <a href="#" class="btn btn-success"
+                    >Read More <i class="bi bi-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card border-0" style="width: 90%">
+                <img src="imgs/trailer-home.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Learn to Find A Good Trailer House For You
+                  </h5>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <p class="card-text">by Alex Tint</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="card-text float-end">Jan 9, 2023</p>
+                    </div>
+                  </div>
+
+                  <a href="#" class="btn btn-success"
+                    >Read More <i class="bi bi-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="bg-dark custom-font py-5">
+      <div class="container text-center border-bottom border-white pb-4">
+        <h2 class="text-white mb-0">Ready To Get Started?</h2>
+        <p class="fs-5 text-white-50">Join the Worldwide Community Today</p>
+        <div class="input-group mb-3 mx-auto" id="footer-email">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your email address"
+            aria-label="Recipient's email"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-success" type="button" id="button-addon2">
+            Button
+          </button>
+        </div>
+      </div>
+      <div class="mt-4 container text-center text-white">
+        <p class="company-font fs-3 text-white-50">
+          &copy; 2023 HomeState, Inc.
+        </p>
+        <div class="social-media">
+          <i class="bi bi-facebook m-3"></i>
+          <i class="bi bi-twitter m-3"></i>
+          <i class="bi bi-instagram m-3"></i>
+          <i class="bi bi-youtube m-3"></i>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
     <script

@@ -10,7 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar-brand {
+.company-font {
   font-family: 'Alumni Sans', sans-serif;
 }
 
@@ -33,4 +33,42 @@ body {
 .hover-green:hover {
   background-color: #198754;
   color: white;
+}
+
+.bg-container {
+  background: rgba(25, 41, 135, 0.05) !important;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  
+}
+
+.bg-container img {
+  border-radius: 50%;
+}
+
+.social-media {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.social-media i:hover {
+  color: #dc3545;
+}
+
+@media (min-width: 992px) {
+  #footer-email {
+    width: 50%;
+  }
+} 
+
+@media (max-width: 992px) {
+  #footer-email {
+    width: 70%;
+  }
+}
+
+@media (max-width: 468px) {
+  #footer-email {
+    width: 95%;
+  }
 }
