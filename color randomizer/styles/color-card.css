@@ -26,13 +26,13 @@
 
 h1 {
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
 }
 
 .hex-container {
   display: grid;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .gradient {
@@ -40,7 +40,7 @@ h1 {
 }
 
 .palette {
-  grid-template-columns: 5rem 5rem 5rem 5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .color-container {
@@ -88,7 +88,7 @@ h1 {
 }
 
 .hex-code {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -154,7 +154,7 @@ button {
   border: none;
   border-radius: 2rem;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   opacity: 0.95;
   margin-top: 0.8rem;

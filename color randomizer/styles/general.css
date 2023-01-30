@@ -38,8 +38,8 @@ body {
 
 .content-center {
   /* border: 1px solid var(--secondary); */
-  max-width: 450px;
-  width: 45%;
+  max-width: 550px;
+  width: 75%;
   height: 100vh;
 }
 
@@ -65,18 +65,18 @@ a {
 .site-logo a {
   display: grid;
   grid-template-columns: 2.4rem auto;
-  gap: 1.4rem;
+  gap: 1.8rem;
   align-items: center;
 }
 
 .site-logo img {
-  height: 3.2rem;
+  height: 3.8rem;
   filter: var(--logo-color)
 }
 
 .site-name {
   margin: 0.7rem 0;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: var(--font-color1);
 }
@@ -93,7 +93,7 @@ a {
 }
 
 .menu img {
-  height: 1.5rem;
+  height: 2rem;
   filter: var(--menu-color);
   opacity: 65%;
   transition: opacity 15ms;
@@ -125,7 +125,7 @@ a {
   margin: 1rem 2.5rem;
   cursor: pointer;
 
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 

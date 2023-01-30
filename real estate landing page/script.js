@@ -1,7 +1,9 @@
-let numArr = [1, 2, 2, 1];
+const highAndLow = numbers => {
+    
+  let arr = numbers.split(" ")
+  let sorted = arr.reverse()
+  
+  return `${sorted[0]}, ${sorted[-1]}`
+};
 
-function Palindrome(head) {
-  return head == head.reverse();
-}
-
-Palindrome(numArr);
+console.log(highAndLow("1 2 3 4 5"));
