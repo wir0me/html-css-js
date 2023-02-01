@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=], initial-scale=1.0" />
-    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="imgs/convert.png" />
     <title>Unit Converter</title>
@@ -56,6 +55,13 @@
                 <path d="M6 9l6 6l6 -6"></path>
               </svg>
             </div>
+            <div class="unit-select-options from">
+              <ul>
+                <li class="options">Celsius</li>
+                <li class="options">Fahrenheit</li>
+                <li class="options">Kelvin</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="reverse-unit">
@@ -96,11 +102,18 @@
                 <path d="M6 9l6 6l6 -6"></path>
               </svg>
             </div>
+            <div class="unit-select-options to">
+              <ul>
+                <li class="options">Celsius</li>
+                <li class="options">Fahrenheit</li>
+                <li class="options">Kelvin</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <div class="from-unit">
-        <input type="number" id="user-input" placeholder="0"" />
+        <input type="number" id="user-input" placeholder="0" />
         <p class="unit">Celsius</p>
       </div>
       <div class="to-unit">
@@ -108,5 +121,7 @@
         <p>Fahrenheit</p>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
