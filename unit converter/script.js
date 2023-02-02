@@ -21,22 +21,54 @@ function unitConvert(e) {
 
 // ─────────────────────────────────────────────────────────────────────────────
 
-// dropdown
+// dropdown options
 
-const unitDropdown = document.getElementsByClassName('select-unit');
-const dropdownOptions = document.getElementsByClassName('unit-select-options');
-const dropdownFrom = document.getElementsByClassName('from')[0];
-const dropdownTo = document.getElementsByClassName('to')[0];
+const fromSelectionBtn = document.querySelector('.from-selection');
+const toSelectionBtn = document.querySelector('.to-selection');
+const fromDropdown = document.querySelector('.from');
+const toDropdown = document.querySelector('.to');
 
-for (let i = 0; i < dropdownOptions.length; i++) {
-  unitDropdown[i].addEventListener('click', function() {
-    if (i == 0) {
-      dropdownFrom.style.display = 'contents';
-      dropdownTo.style.display = 'none';
+fromSelectionBtn.addEventListener('click', function(){
+  fromDropdown.style.display = 'contents';
+})
 
-    }
-  });
+toSelectionBtn.addEventListener('click', function(){
+  toDropdown.style.display = 'contents';
+})
+
+
+// dropdown select
+
+const fromOptions = document.getElementsByClassName('from-options');
+const toOptions = document.getElementsByClassName('to-options');
+const selectFromUnit = document.querySelector('#select-from-unit');
+const selectToUnit = document.querySelector('#select-to-unit');
+
+for (fromOption of fromOptions) {
+  fromOption.addEventListener('click', function(){
+    selectFromUnit.innerText = this.textContent;
+  })
+}
+
+for (toOption of toOptions) {
+  toOption.addEventListener('click', function(){
+    selectToUnit.innerText = this.textContent;
+  })
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+
+// Conversion container displayed
+
+let fromConversion
+let toConversion
+
+const fromUnit = document.querySelector('.from-unit');
+const toUnit = document.querySelector('.to-unit');
+
+
+
+// Conversion unit displayed
+
+
 

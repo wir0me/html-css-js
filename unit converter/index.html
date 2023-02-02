@@ -36,9 +36,9 @@
       </div>
       <div class="unit-selection">
         <div class="from-selection">
-          <div class="selection-btn">
-            <div class="unit-select-bar">
-              <div class="select-unit">From</div>
+          <div class="selection-btn from-selection">
+            <div class="unit-dropdown-bar">
+              <div class="select-unit" id="select-from-unit">From</div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-chevron-down"
@@ -55,11 +55,11 @@
                 <path d="M6 9l6 6l6 -6"></path>
               </svg>
             </div>
-            <div class="unit-select-options from">
+            <div class="unit-dropdown-options from">
               <ul>
-                <li class="options">Celsius</li>
-                <li class="options">Fahrenheit</li>
-                <li class="options">Kelvin</li>
+                <li class="from-options options">Celsius</li>
+                <li class="from-options options">Fahrenheit</li>
+                <li class="from-options options">Kelvin</li>
               </ul>
             </div>
           </div>
@@ -83,9 +83,9 @@
           </svg>
         </div>
         <div class="to-selection">
-          <div class="selection-btn">
-            <div class="unit-select-bar">
-              <div class="select-unit">To</div>
+          <div class="selection-btn to-selection">
+            <div class="unit-dropdown-bar">
+              <div class="select-unit" id="select-to-unit">To</div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-chevron-down"
@@ -102,11 +102,11 @@
                 <path d="M6 9l6 6l6 -6"></path>
               </svg>
             </div>
-            <div class="unit-select-options to">
+            <div class="unit-dropdown-options to">
               <ul>
-                <li class="options">Celsius</li>
-                <li class="options">Fahrenheit</li>
-                <li class="options">Kelvin</li>
+                <li class="to-options options">Celsius</li>
+                <li class="to-options options">Fahrenheit</li>
+                <li class="to-options options">Kelvin</li>
               </ul>
             </div>
           </div>
@@ -114,11 +114,11 @@
       </div>
       <div class="from-unit">
         <input type="number" id="user-input" placeholder="0" />
-        <p class="unit">Celsius</p>
+        <p class="unit">From</p>
       </div>
       <div class="to-unit">
         <input type="number" placeholder="0" disabled />
-        <p>Fahrenheit</p>
+        <p>To</p>
       </div>
     </div>
 
