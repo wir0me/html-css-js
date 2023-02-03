@@ -131,11 +131,15 @@ body {
 
 /* conversion */
 
-.from-unit {
+.conversion-container {
+  display: none;
+}
+
+.from-unit-section {
   background-color: var(--dark);
 }
 
-.from-unit, .to-unit {
+.from-unit-section, .to-unit-section {
   text-transform: uppercase;
   font-size: 1.4rem;
 
@@ -146,13 +150,13 @@ body {
   padding: 0 1rem;
 }
 
-.to-unit {
+.to-unit-section {
   background-color: white;
   border-bottom-right-radius: 2rem;
   padding: 1rem 1.5rem;
 }
 
-.to-unit p {
+.to-unit-section p {
   margin: 0;
 }
 
@@ -176,8 +180,12 @@ input[type="number"]::-webkit-inner-spin-button{
   color: white;
 }
 
-.unit {
+.unit-from {
   color: var(--grey);
+}
+
+.unit-to {
+  color: black
 }
 
 
