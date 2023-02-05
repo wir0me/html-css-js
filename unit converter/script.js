@@ -63,8 +63,8 @@ toSelectionBtn.addEventListener("click", function () {
 
 const fromOptions = document.getElementsByClassName("from-options");
 const toOptions = document.getElementsByClassName("to-options");
-const selectFromUnit = document.querySelector("#select-from-unit");
-const selectToUnit = document.querySelector("#select-to-unit");
+var selectFromUnit = document.querySelector("#select-from-unit");
+var selectToUnit = document.querySelector("#select-to-unit");
 
 // conversion container variables
 
@@ -113,5 +113,19 @@ for (toOption of toOptions) {
     }
   });
 }
+
+// reverse button
+
+const reverseButton = document.querySelector(".reverse-unit");
+
+reverseButton.addEventListener("click", () => {
+  [fromSelected, toSelected] = [toSelected, fromSelected];
+  [userInput.value, resultContainer.value] = [
+    resultContainer.value,
+    userInput.value,
+  ];
+  fromUnit.innerText = selectFromUnit.innerText = fromSelected;
+  toUnit.innerText = selectToUnit.innerText = toSelected;
+});
 
 // ─────────────────────────────────────────────────────────────────────────────
